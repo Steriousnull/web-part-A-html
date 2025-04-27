@@ -1,0 +1,44 @@
+index.html
+
+<html>
+<head>
+  <title>Image Overlay with Text</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="image-container">
+    <img src="C:\Users\afree\Pictures\india-6487315_1280.webp" alt="image">
+    <div class="overlay-text">
+      Hello India!
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+style.css
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-size: 50px;
+  text-align: center;
+}
